@@ -1,0 +1,20 @@
+ADD Electron
+
+
+https://ecstatic-franklin-77d7cd.netlify.app
+
+ADD Bootstrap TOAST -- for School/Company Submit - IF ERROR/SUCCESS
+Invert the Chevron - in Nav - like purple - after it is hovered
+
+Destroy Data after component is unmounted
+
+unit testing an app in React
+unit testing in Node js - Express
+
+
+ADVANCED:
+remove in-line CSS
+
+Pagination - to All tables - SHOW MORE (Add 20 more in the list.)
+Store Token in Local store - Destroy on close.
+Generate random Token on login.

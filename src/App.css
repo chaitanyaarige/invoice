@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   width: 70%;
+  max-width: 1366px;
+  font-size: 15px;
+  margin: auto;
+  background: #eeebd9;
 }
 
 @media (prefers-reduced-motion: no-preference) {
