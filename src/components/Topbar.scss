@@ -2,18 +2,29 @@
   &__bgColor {
     // visibility: hidden;
     background-color: #ffec89;
-    background: radial-gradient(circle, rgba(255,236,137,1) 0%, rgba(192,192,192,1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 236, 137, 1) 0%,
+      rgba(192, 192, 192, 1) 100%
+    );
   }
 
   &__mainContainer {
     display: flex;
   }
 
+  &__poweronoff {
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
   &__phone-gst {
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
   }
 
   &__logo {
@@ -26,13 +37,13 @@
 
   &__address {
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 20px;
   }
 
   &__MainTitle {
     font-weight: 600;
     font-size: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 }

@@ -8,11 +8,11 @@ export default function Header() {
   const [showBuyer, setShowBuyer] = useState(false);
   const [currentColor, setCurrentColor] = useState('white');
 
-  const routemeto = (data) => {
+  function routemeto(data){
     // this.$router.push({ path: `/${data}` }).catch(err => {});
   };
 
-  const onOver = (data) => {
+  function onOver(data) {
     switch (data) {
       case "buyer":
         return (setShowBuyer(true));
@@ -20,9 +20,8 @@ export default function Header() {
         return (setShowStock(true));
     }
   };
-  const onLeave = () => {
+  function onLeave(){
     setShowBuyer(true)
-
     // this.showStock = false;
     // this.showBuyer = false;
   };

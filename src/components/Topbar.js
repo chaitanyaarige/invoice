@@ -1,8 +1,19 @@
 import React from "react";
 import emoji from "assets/logo.png";
 import "./Topbar.scss";
+import powerOnOff from "assets/powerOnOff.svg";
 
 export default function Topbar() {
+  // isLoggedIn: state => state.auth.isLoggedn
+
+  function logoutCustomer() {
+    // this.$store.commit("auth/logoutCustomer");
+  };
+  function goToHome() {
+    // this.$router.push({ path: `/` });
+  };
+
+
   return (
     <div className="Topbar__bgColor">
       <div className="Topbar__mainContainer">
@@ -26,27 +37,8 @@ export default function Topbar() {
           </div>
         </div>
 
-        <div
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "2rem",
-          }}
-        >
-          <svg
-            width="30px"
-            height="30px"
-            viewBox="0 0 16 16"
-            className="bi bi-power"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.578 4.437a5 5 0 1 0 4.922.044l.5-.866a6 6 0 1 1-5.908-.053l.486.875z"
-            />
-            <path fill-rule="evenodd" d="M7.5 8V1h1v7h-1z" />
-          </svg>
+        <div onClick={goToHome} className="Topbar__poweronoff">
+          <img src={powerOnOff} alt="powerOnOff" />
         </div>
       </div>
     </div>
