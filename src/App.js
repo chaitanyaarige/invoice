@@ -1,5 +1,5 @@
-import Header from 'header.js';
-import Dashboard from 'Dashboard.js'
+import Header from 'components/header.js';
+import Dashboard from 'components/Dashboard.js'
 import 'App.css';
 import Topbar from "components/Topbar";
 

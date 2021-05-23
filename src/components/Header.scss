@@ -1,0 +1,55 @@
+.HeaderList {
+  &__shorts {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    min-height: 60px;
+    max-width: 1170px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    display: flex;
+    background-color: #d7fff8;
+    background: #a387b5;
+    background: linear-gradient(90deg, #a387b5c7 0%, #f58d8d 50%, #7efbe5 100%);
+    align-items: center;
+    // position: sticky;
+    // top: 0;
+    // z-index: 1030;
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    padding: 3px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgray;
+    &-last {
+      border: none;
+    }
+  }
+
+  &__smallBoxes {
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &__subcontainer {
+    display: flex;
+  }
+
+  &__rupee {
+    color: white;
+    font-size: 25px;
+  }
+
+  &__cardcontainer {
+    margin-left: -50px;
+    min-width: 200px;
+    position: absolute;
+    z-index: 999;
+  }
+
+  &__buttonSize {
+    width: 150px;
+    background: linear-gradient(to right, #0098f0, #00f2c3) !important;
+  }
+}
