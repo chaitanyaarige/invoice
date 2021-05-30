@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Dashboard.scss";
 export default class Dashboard extends Component {
   state = {
     stationery: [
@@ -79,25 +79,37 @@ export default class Dashboard extends Component {
   };
 
   saveInput = (e) => {
-      console.log(  e.target.value );
+    console.log(e.target.value);
   };
 
   addNewItem = () => {
     // let { cart, input } = this.state;
     // cart.push(input);
-    // this.state.cart.push(this.state.input); // same as above, though bad practice 
+    // this.state.cart.push(this.state.input); // same as above, though bad practice
   };
 
   render() {
     return (
-      <div>
-        <input type="text" onChange={this.saveInput} />
-        <button onClick={this.addNewItem}> Add Item </button>
-        <ol>
-          {this.state.stationery.map((item, index) => {
-            return <li key={index}> {item.prod_name}</li>;
-          })}
-        </ol>
+      <div className="Dashboard__mainContainer">
+        <div>&nbsp;</div>
+        <h3>List of Invoices</h3>
+        {/* <input type="text" onChange={this.saveInput} /> */}
+        {/* <button onClick={this.addNewItem}> Add Item </button> */}
+        <div className="Dashboard__card-container">
+          <div>
+            <div className="Dashboard__tableHeader">
+              <span>Invoice</span>
+              <span>Invoice</span>
+              <span>Invoice</span>
+            </div>
+            <ul className="listNone">
+              {this.state.stationery.map((item, index) => {
+                return <li className="Dashboard__Card" key={index}>#{index + 1} {item.prod_name}</li>;
+              })}
+            </ul>
+          </div>
+
+        </div>
       </div>
     );
   }

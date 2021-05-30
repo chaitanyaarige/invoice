@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  width: 70%;
+  width: 90%;
   max-width: 1366px;
   font-size: 15px;
   margin: auto;
+  height: 100VH;
   background: #eeebd9;
 }
 
