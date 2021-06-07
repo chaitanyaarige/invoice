@@ -1,27 +1,44 @@
 .Dashboard {
   &__mainContainer {
-    background: #EEE;
+    background: #eee;
     margin: 20px;
+    border-radius: 20px;
   }
 
   &__card-container {
+    margin-left: 40px;
     // display: flex;
     // display: inline-flex;
   }
 
-  &__Card {
-    background:white;
-    margin: 10px 0;
-    position: relative;
-    width: 520px;
-    height: 40px;
-    box-shadow: 5px 5px 15px rgba(#eee, .5);
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    border-radius: 10px;
+  &__amount {
+    width: 215px;
+    line-height: 20px;
+    border: 2px dashed #a387b5c7;
+    height: 90px;
+  }
+
+  &__received {
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: #706a6a;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__rupees {
+    padding-left: 5px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__invoices {
     text-align: left;
     padding-left: 10px;
     display: flex;
     align-items: center;
+    width: 520px;
+    height: 40px;
   }
 }

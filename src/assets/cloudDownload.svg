@@ -2,7 +2,7 @@
         width="25px"
         height="25px"
         viewBox="0 0 16 16"
-        class="bi bi-cloud-download-fill"
+        className="bi bi-cloud-download-fill"
         fill="white"
         xmlns="http://www.w3.org/2000/svg"
       >

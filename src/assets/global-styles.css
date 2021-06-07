@@ -1,3 +1,13 @@
 .listNone {
   list-style: none;
 }
+
+.Card {
+  background: white;
+  margin: 10px 0;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(#eee, 0.5);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}

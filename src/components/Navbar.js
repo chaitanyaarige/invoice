@@ -22,6 +22,7 @@ export default function Navbar() {
         return (setShowBuyer(true));
       case "stock":
         return (setShowStock(true));
+      default: return ;
     }
   };
   function onLeave(){
@@ -47,24 +48,24 @@ export default function Navbar() {
 
 
     <div onClick={e => routemeto(e, 'cashbill')} className="Navbar__smallBoxes">
-    <span class="Navbar__rupee">&#8377;</span>
-      <span class="pl-2">Cash Invoice</span>
+    <span className="Navbar__rupee">&#8377;</span>
+      <span className="pl-2">Cash Invoice</span>
     </div>
 
 
-    <div onmouseOver={e => onOver(e, 'stock')} className="Navbar__smallBoxes">
+    <div onMouseOver={e => onOver(e, 'stock')} className="Navbar__smallBoxes">
       <img className="Navbar__logo" src={cloudDownload} alt="yt" />
       <span className="pl-2">Stock In</span>
     </div>
 
-    {/* <div v-if="showStock" class="Navbar__cardcontainer">
+    {/* <div v-if="showStock" className="Navbar__cardcontainer">
         <b-card>
-          <div @click.prevent="routemeto('stockin/books')" class="Navbar__card">Books</div>
-          <div @click.prevent="routemeto('stockin/govtbooks')" class="Navbar__card">Govt Books</div>
-          <div @click.prevent="routemeto('stockin/stationery')" class="Navbar__card">Stationery</div>
+          <div @click.prevent="routemeto('stockin/books')" className="Navbar__card">Books</div>
+          <div @click.prevent="routemeto('stockin/govtbooks')" className="Navbar__card">Govt Books</div>
+          <div @click.prevent="routemeto('stockin/stationery')" className="Navbar__card">Stationery</div>
           <div
             @click.prevent="routemeto('stockin/registers')"
-            class="Navbar__card Navbar__card-last"
+            className="Navbar__card Navbar__card-last"
           >Printed Registers</div>
         </b-card>
       </div> */}
