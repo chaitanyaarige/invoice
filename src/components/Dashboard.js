@@ -50,17 +50,37 @@ export default function Dashboard() {
           </div>
 
           <div className="Card Dashboard__amount">
-            <div className="Dashboard__received">Total Received amount</div> <br></br>
+            <div className="Dashboard__received">Total Received amount</div>{" "}
+            <br></br>
             <div className="Dashboard__rupees">&nbsp; &#8377; 89555</div>
           </div>
 
+          <div className="Dashboard__search">
+            <input type="text"></input>
+            <span class="searchicon"></span>
+          </div>
+
           <div>
+            <div className="Dashboard__invoices">
+              <div style={{ width: "30px" }}> No. </div>
+              <div style={{ width: "200px" }}> Product Name </div>
+              <div style={{ width: "100px" }}> Unit Price</div>
+              <div style={{ width: "100px" }}> Date</div>
+            </div>
+
             {stationery &&
               stationery.map((item, index) => {
                 return (
-                  <li className="Card Dashboard__invoices" key={index}>
-                    #{index + 1} {item.prod_name}
-                  </li>
+                  <div className="Card Dashboard__invoices" key={index}>
+                    <div style={{ width: "30px" }}> #{index + 1} </div>
+                    <div style={{ width: "200px" }}> {item.prod_name} </div>
+                    <div style={{ width: "100px" }}>
+                      &#8377; {item.unit_price}
+                    </div>
+                    <div style={{ width: "100px" }}>
+                      {new Date(item.created_at).toLocaleDateString("en-US")}
+                    </div>
+                  </div>
                 );
               })}
           </div>
