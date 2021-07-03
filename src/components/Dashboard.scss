@@ -13,7 +13,6 @@
   &__amount {
     width: 215px;
     line-height: 20px;
-    border: 2px dashed #a387b5c7;
     height: 90px;
   }
 
@@ -22,7 +21,7 @@
     text-transform: uppercase;
     color: #706a6a;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   &__rupees {
@@ -36,7 +35,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 520px;
+    width: 620px;
     height: 40px;
   }
 }

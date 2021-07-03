@@ -63,9 +63,10 @@ export default function Dashboard() {
           <div>
             <div className="Dashboard__invoices">
               <div style={{ width: "30px" }}> No. </div>
+              <div style={{ width: "100px" }}> Date</div>
               <div style={{ width: "200px" }}> Product Name </div>
               <div style={{ width: "100px" }}> Unit Price</div>
-              <div style={{ width: "100px" }}> Date</div>
+              <div style={{ width: "110px" }}> Payment Status</div>
             </div>
 
             {stationery &&
@@ -73,12 +74,15 @@ export default function Dashboard() {
                 return (
                   <div className="Card Dashboard__invoices" key={index}>
                     <div style={{ width: "30px" }}> #{index + 1} </div>
+                    <div style={{ width: "100px" }}>
+                      {new Date(item.created_at).toLocaleDateString("en-US")}
+                    </div>
                     <div style={{ width: "200px" }}> {item.prod_name} </div>
                     <div style={{ width: "100px" }}>
                       &#8377; {item.unit_price}
                     </div>
-                    <div style={{ width: "100px" }}>
-                      {new Date(item.created_at).toLocaleDateString("en-US")}
+                    <div style={{ width: "110px" }}>
+                      &#8377; {item.unit_price}
                     </div>
                   </div>
                 );
