@@ -32,7 +32,7 @@ export default function Navbar() {
   };
 
   return (
-  <div className="d-print-none">
+  <div className="d-print-none max-widths">
     <div className="Navbar__shorts">
 
     <div onClick={e => routemeto(e, '')} className="Navbar__smallBoxes">

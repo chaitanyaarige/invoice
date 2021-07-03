@@ -11,6 +11,8 @@
 
   &__mainContainer {
     display: flex;
+    position: relative;
+    padding: .5rem 1rem;
   }
 
   &__poweronoff {
@@ -29,6 +31,7 @@
 
   &__logo {
     width: 200px;
+    height: 112px;
   }
 
   &__gst {
@@ -44,6 +47,7 @@
   &__MainTitle {
     font-weight: 600;
     font-size: 40px;
+    line-height: 1.5;
     font-family: "Raleway", sans-serif;
   }
 }

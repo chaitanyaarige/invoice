@@ -36,7 +36,7 @@ export default function Dashboard() {
   // };
 
   return (
-    <div className="Dashboard__mainContainer">
+    <div className="Dashboard__mainContainer max-widths">
       <div>&nbsp;</div>
       <h3>List of Invoices</h3>
       {/* <input type="text" onChange={this.saveInput} /> */}
