@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import 'index.css';
 import App from 'App';
 import reportWebVitals from './reportWebVitals';
-import * as Sentry from '@sentry/react';
-import { Integrations } from "@sentry/tracing";
+// import * as Sentry from '@sentry/react';
+// import { Integrations } from "@sentry/tracing";
 
 // Sentry.init({
 //   dsn: "process.env.senrtyDSN",

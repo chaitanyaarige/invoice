@@ -11,3 +11,13 @@
   transform-style: preserve-3d;
   border-radius: 10px;
 }
+
+.max-widths {
+  max-width: 1366px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.pl-2 {
+  padding-left: .5rem!important;
+}

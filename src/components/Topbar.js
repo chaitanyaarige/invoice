@@ -2,22 +2,29 @@ import React from "react";
 import emoji from "assets/logo.png";
 import "./Topbar.scss";
 import powerOnOff from "assets/powerOnOff.svg";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
+
 
 export default function Topbar() {
   // isLoggedIn: state => state.auth.isLoggedn
 
   function logoutCustomer() {
     // this.$store.commit("auth/logoutCustomer");
-  };
+  }
   function goToHome() {
-    // this.$router.push({ path: `/` });
-  };
-
+    // history.push("/");
+  }
 
   return (
     <div className="Topbar__bgColor">
       <div className="Topbar__mainContainer">
-        <img className="Topbar__logo" src={emoji} alt="yt" />
+        <img
+          onClick={goToHome}
+          className="Topbar__logo"
+          src={emoji}
+          alt="yt"
+        />
 
         <div>
           <div>

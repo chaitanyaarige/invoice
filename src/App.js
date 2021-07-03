@@ -3,6 +3,7 @@ import Dashboard from 'components/Dashboard.js'
 import 'App.css';
 import './assets/global-styles.css'
 import Topbar from "components/Topbar";
+import Footer from "components/Footer";
 
 
 function App() {

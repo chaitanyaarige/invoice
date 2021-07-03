@@ -3,7 +3,6 @@
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     min-height: 60px;
-    max-width: 1170px;
     margin: 30px auto;
     padding: 0px 20px;
     display: flex;
@@ -52,11 +51,4 @@
     width: 150px;
     background: linear-gradient(to right, #0098f0, #00f2c3) !important;
   }
-}
-
-
-.max-widths {
-  max-width: 1170px;
-  margin: auto;
-  padding-bottom: 20px;
 }

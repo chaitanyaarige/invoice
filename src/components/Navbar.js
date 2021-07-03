@@ -58,6 +58,21 @@ export default function Navbar() {
       <span className="pl-2">Stock In</span>
     </div>
 
+    <div onMouseOver={e => onOver(e, 'stock')} className="Navbar__smallBoxes">
+      <img className="Navbar__logo" src={cloudDownload} alt="yt" />
+      <span className="pl-2">Stock In</span>
+    </div>
+
+    <div onMouseOver={e => onOver(e, 'stock')} className="Navbar__smallBoxes">
+      <img className="Navbar__logo" src={cloudDownload} alt="yt" />
+      <span className="pl-2">Stock In</span>
+    </div>
+
+    <div onMouseOver={e => onOver(e, 'stock')} className="Navbar__smallBoxes">
+      <img className="Navbar__logo" src={cloudDownload} alt="yt" />
+      <span className="pl-2">Stock In</span>
+    </div>
+
     {/* <div v-if="showStock" className="Navbar__cardcontainer">
         <b-card>
           <div @click.prevent="routemeto('stockin/books')" className="Navbar__card">Books</div>

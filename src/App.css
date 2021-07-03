@@ -4,8 +4,8 @@
   max-width: 99vw;
   font-size: 15px;
   margin: auto;
-  height: 100VH;
   background: #eeebd9;
+  padding-bottom: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
