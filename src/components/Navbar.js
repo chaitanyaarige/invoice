@@ -3,6 +3,7 @@ import houseDoor from 'assets/houseDoor.svg'
 import creditCard from 'assets/creditCard.svg'
 import cloudDownload from 'assets/cloudDownload.svg'
 import React, { lazy, useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -35,10 +36,12 @@ export default function Navbar() {
   <div className="d-print-none max-widths">
     <div className="Navbar__shorts">
 
-    <div onClick={e => routemeto(e, '')} className="Navbar__smallBoxes">
+    <Link to="/about">
+    <div  className="Navbar__smallBoxes">
       <img className="Navbar__logo" src={houseDoor} alt="yt" />
       <span className="pl-2">Dashboard</span>
     </div>
+    </Link>
 
 
     <div onClick={e => routemeto(e, 'creditbill')} className="Navbar__smallBoxes">
